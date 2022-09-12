@@ -17,6 +17,8 @@ namespace ChatServer
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " > Server Started...");
             Console.ResetColor();
+           Console.WriteLine( "  Info : Brodcast for all clients cmd : *  ");
+            Console.ResetColor();
             Task.Run(() => server.StartChat());
             while (true)
             {
